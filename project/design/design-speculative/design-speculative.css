@@ -1,0 +1,14 @@
+/* to centre image */
+.center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  padding-top: 60px;
+  width: 40%;
+}
+
+/* add padding top and bottom */
+.img
+{
+Padding: 40px,10px;
+}

@@ -1,0 +1,655 @@
+/* nav styling*/
+:root {
+  --side-panel: 170px;
+  --side-color: black;
+}
+
+*, ::before, ::after {
+  box-sizing: border-box;
+}
+
+:focus {
+  outline: 2px solid #949494;
+}
+
+::-moz-focus-inner {
+  border: 0;
+}
+
+body {
+  position: relative;
+}
+
+
+.navMenu {
+  width: var(--side-panel);
+  color: var(--side-color);
+  background: #ffffff;
+  overflow: hidden;
+  position: fixed;
+  height: 100%;
+  transition: width .4s linear;
+  z-index: 10;
+}
+
+.closeBtn {
+  position: absolute;
+  top: 5px;
+  right: 10px;
+  color: inherit;
+  padding: 0 5px;
+  background: #d6d6d6;
+}
+
+.hamburger {
+  position: absolute;
+  top: 10px;
+  left: 12px;
+  padding: 0 5px 4px;
+  z-index: 12;
+  transition: margin .4s linear;
+}
+
+.hamburger-z {
+  z-index: 1;
+}
+
+.hidden {
+  width: 0;
+}
+
+.vh {
+  visibility: hidden;
+}
+
+button {
+  font-size: 3em;
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+ul {
+  font-family: 'Montserrat';
+  list-style: none;
+  padding: 1.4em;
+  line-height: 1.4;
+  background: #ffffff;
+}
+
+ul li {
+  padding: 5px 0;
+}
+
+.navMenu a {
+  text-decoration: none;
+  font-weight: thin;
+  color: inherit;
+  font-size: 1.2em;
+}
+
+.navMenu a:hover {
+  border-bottom: solid 1px;
+}
+
+main {
+  padding: 1.2em;
+  transition: margin-left .4s linear;
+  position: relative;
+  z-index: 1;
+}
+
+h1 {
+  margin: 0;  
+}
+
+.main-right {
+  padding-left: 4em;  
+}
+
+.menuOpen {
+  margin-left: var(--side-panel);
+}
+
+.overlay {
+  position: fixed;
+  z-index: 8;
+  top: 0;
+  right: 0;
+  left: var(--side-panel);
+  bottom: 0;
+  background: rgba(0,0,0,0);
+  height: 100%;
+}
+
+@media (max-width: 480px) {
+  .navMenu {
+    width: 100%;
+  }
+
+  .menuOpen {
+    margin-left: 0;
+  }
+
+}
+/* nav styling ends*/
+
+/*main*/
+h1 {
+  text-align: center;
+}
+body {
+  min-height: 100vh;
+  max-width: 1920px; 
+  margin: 0 auto;
+  background color: #ffffff;
+  font-family: 'Montserrat';
+  font-size: 16px;
+  color: rgb(40,40,40);
+  line-height: 1.7;
+}
+
+/* h2 title */
+h2 {
+  font-size: 35px;
+}
+
+/* h3 title to centre */
+.titlecenter {
+  font-size: 25px;
+  text-align: center;
+}
+
+.center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 5vw;
+  width: 100%;
+  color: black;
+}
+/* h2 title ends */
+
+/*don't change link colours*/
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+/*don't change link colours ends*/
+
+/*remove outline on click*/
+a:active, a:focus {
+ box-shadow: none;
+ outline: none;
+}
+/*remove outline on click ends*/
+
+/* image captions general*/
+.caption {
+  font-family: 'Montserrat';
+  color: gray;
+  text-align: center;
+}
+/* image captions end*/
+
+/*animated main blog header*/
+.animated-header {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+}
+
+/* Solid border */
+hr.solid {
+  border-top: 3px solid #bbb;
+}
+
+/*main blog responsive image grids*/
+.outer-grid {
+   display: flex;
+   flex-wrap: wrap;
+   padding: 0 4px;
+}
+.inner-grid {
+   flex: 33.333%;
+   max-width: 33.333%;
+   padding: 0 4px;
+}
+.inner-grid img {
+   margin-top: 8px;
+   width: 100%;
+   padding: 10px;
+}
+
+
+/*main blog page responsive image grids*/
+@media screen and (max-width: 800px) {
+   .inner-grid {
+      flex: 50%;
+      max-width: 50%;
+   }
+}
+@media screen and (max-width: 600px) {
+   .inner-grid {
+      flex: 100%;
+      max-width: 100%;
+   }
+}
+/*blog page responsive image grids end*/
+
+/*text style of blogs*/
+.blogtext {
+  max-width: 700px;
+  text-align: left;
+  line-height: 1.7;
+}
+
+.centerthetext {
+display: flex;
+  flex-flow: column nowrap;
+  justify-content: center; /* aligns on vertical for column */
+  align-items: center; /* aligns on horizontal for column */
+}
+
+.flex-container1-text {
+  justify-content: center;
+}
+
+/* blog 11 image grid1*/
+#grid {
+    max-width: 1024px;
+    display: grid;
+    grid-template-columns: 100%;
+}
+
+#grid figure {
+    margin: 3;
+    padding: 0;
+}
+
+#grid img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
+
+/* blog 11 image grid1 ends*/
+
+/* blog 11 image grid2*/
+#grid2 {
+    max-width: 1024px;
+    display: grid;
+    grid-template-columns: 100%;
+}
+
+#grid2 figure {
+    margin: 3;
+    padding: 0;
+}
+
+#grid2 img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
+/* blog 11 image grid2 ends*/
+
+/*blog next-previous buttons*/
+ .previous-next {
+zoom: 80%;
+display: inline;
+float: right;
+margin-right: 80px;
+}
+
+.action_btn {
+display: inline;
+}
+/*blog next-previous buttons end*/
+
+/*responsive video*/
+.video-responsive{
+    overflow:hidden;
+    padding-bottom:56.25%;
+    position:relative;
+    height:0;
+}
+.video-responsive iframe{
+    left:0;
+    top:0;
+    height:100%;
+    width:100%;
+    position:absolute;
+}
+
+/*IXD Styles*/
+.flex-container1-text-ixd { 
+  border-radius: 80px;
+  min-height: 100vh;
+  max-width: 1920px; 
+  margin: 0 auto;
+  padding: 5vw;
+  font-family: 'Montserrat';
+  font-size: 16px;
+  color: rgb(40,40,40);
+  line-height: 1.3;
+}
+
+.flex-container2-text-ixd { 
+  border-radius: 80px;
+  min-height: 100vh;
+  max-width: 1920px; 
+  margin: 0 auto;
+  padding: 5vw;
+  font-family: 'Montserrat';
+  font-size: 16px;
+  color: rgb(40,40,40);
+  line-height: 1.3;
+  background-color: rgb(237, 237, 237);
+}
+
+.flex-container3-text-ixd { 
+  border-radius: 80px;
+  max-width: 1920px; 
+  margin: 0 auto;
+  padding: 5vw;
+  font-family: 'Montserrat';
+  font-size: 16px;
+  color: rgb(40,40,40);
+  line-height: 1.3;
+  background-color: rgb(237, 237, 237);
+}
+
+.flex-container4-text-ixd { 
+  border-radius: 80px;
+  min-height: 100vh;
+  max-width: 1920px; 
+  margin: 0 auto;
+  padding: 5vw;
+  font-family: 'Montserrat';
+  font-size: 16px;
+  color: rgb(40,40,40);
+  line-height: 1.3;
+  background-color: rgb(237, 237, 237);
+}
+
+.flex-container5-text-ixd { 
+  border-radius: 80px;
+  min-height: 100vh;
+  max-width: 1920px; 
+  margin: 0 auto;
+  padding: 5vw;
+  font-family: 'Montserrat';
+  font-size: 16px;
+  color: rgb(40,40,40);
+  line-height: 1.3;
+  background-color: rgb(237, 237, 237);
+}
+/*persona and empathy map image grid*/
+
+.row1-ixd {
+  display: flex;
+}
+
+.column1-ixd {
+  flex: 50%;
+}
+/*persona and empathy map image grid ends*/
+
+/*detailed design image grid*/
+.designcolumn {
+	  flex: 33.33%;
+	  height: 200px;
+	  padding: 10px;
+	  margin: 5px;
+	  background-color: #cccccc;
+	  text-align: center;
+	}
+	.designcontainer {
+	   display: flex;
+	}	
+/*detailed design image grid ends*/
+
+/*IXD font styles*/
+.special-font-h2 {
+  font-size: 60px;
+  color: #757575;
+}
+
+.special-font-h3 {
+  font-size: 40px;
+  color: #aeafc1;
+}
+
+.special-font-h4 {
+  font-size: 25px;
+  color: #454545;
+}
+
+.special-font-h5 {
+  font-size: 20px;
+  color: #83809d;  
+}
+/*IXD font styles end*/
+
+/*IXD Styles end*/
+
+/*Typography styles*/
+/*Contact and Orange page*/
+.special-fontv2-h3 {
+  font-size: 40px;
+  color: #ababab;
+}
+
+/*Blog page*/
+.special-fontv3-h3 {
+  font-size: 35px;
+  font-weight: 300;
+  color: #ababab;
+}
+
+/*About Me page*/
+.special-fontgreen-h3 {
+  font-size: 40px;
+  color: #a7ded6;
+}
+
+/*Msc page*/
+.special-fontblue-h3 {
+  font-size: 40px;
+  color: #a1c6e2;
+}
+
+.special-fontgrey-h5 {
+  font-size: 22px;
+  color: #ababab;
+}
+
+/*Orange Page*/
+
+.special-fontorange-h3  {
+  font-size: 40px;
+  color: #FF7900;
+}
+
+.special-fontgrey-h4 {
+  font-size: 30px;
+  color: #808080;
+}
+/*Typography ends*/
+
+/*MSC Styles*/
+/*Background Colour for Objectives*/
+.objectives {
+  background-color: #e5f4ff;
+}
+
+.beneficiaries {
+  background-color: #e5f4ff;
+}
+.scope {
+  background-color: #e5f4ff;
+}
+
+.methods {
+  background-color: #e5f4ff;
+}
+
+.research-questions {
+  background-color: #e5f4ff;
+}
+
+/*Msc table styling*/
+.themetable, th, td {
+  border: 1px solid #9c9c9c;
+  border-collapse: collapse;
+  padding: 20px;
+}
+
+.tdbold {
+  font-weight: 500;
+}
+
+/*IA Styles!!!*/
+.reset {
+  font-size: 16px;
+}
+
+/*IA image carousel*/
+* {box-sizing:border-box}
+
+/* Slideshow container */
+.slideshow-container {
+  max-width: 1300px;
+  position: relative;
+  margin: auto;
+}
+
+/* Make the images invisible by default */
+.Containers {
+  display: none;
+}
+
+/* forward & Back buttons */
+.Back, .forward {
+  cursor: pointer;
+  position: absolute;
+  top: 48%;
+  width: auto;
+  margin-top: -23px;
+  padding: 17px;
+  color: grey;
+  font-weight: bold;
+  font-size: 19px;
+  transition: 0.4s ease;
+  border-radius: 0 5px 5px 0;
+  user-select: none;
+}
+
+/* Place the "forward button" to the right */
+.forward {
+  right: 0;
+  border-radius: 4px 0 0 4px;
+}
+
+/*when the user hovers,add a black background with some little opacity */
+.Back:hover, .forward:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+
+/* Caption Info */
+.Info {
+  color: #3d3d3d;
+  font-size: 16px;
+  padding: 10px 14px;
+  position: relative;
+  bottom: 10px;
+  width: 100%;
+  text-align: center;
+}
+
+/* Worknumbering (1/3 etc) */
+.MessageInfo {
+  color: #f2f2f3;
+  font-size: 14px;
+  padding: 10px 14px;
+  position: absolute;
+  top: 0;
+}
+
+/* The circles or bullets and indicators */
+.dots {
+  cursor: pointer;
+  height: 16px;
+  width: 16px;
+  margin: 0 3px;
+  background-color: #acc;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.5s ease;
+}
+
+.enable, .dots:hover {
+  background-color: #717161;
+}
+
+/* Faint animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.4s;
+  animation-name: fade;
+  animation-duration: 1.4s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .5}
+  to {opacity: 2}
+}
+
+@keyframes fade {
+  from {opacity: .5}
+  to {opacity: 2}
+}
+
+/*IA image carousel ends*/
+
+/*IA Styles ends*/
+
+/*Contact Page Styles*/
+/*Contact Page mail icon*/
+.material-symbols-outlined {
+  font-variation-settings:
+  'FILL' 0,
+  'wght' 400,
+  'GRAD' 0,
+  'opsz' 48
+}
+/*Contact Page mail icon ends*/
+
+/*Contact form*/
+
+/*Contact form ends*/
+/*Contact Page Styles end*/
+
+
+/*footnote*/
+.footnote {
+  font-size: 16px;
+}
+/*footnote ends*/
+
+/*responsive text all*/
+@media (min-width: 0px) {
+  p { font-size: 1rem; }
+}
+
+@media (min-width: 400px) {
+  p { font-size: calc(1rem + 1vw); }
+}
+
+@media (min-width: 1001px){
+  p { font-size: 1rem; }
+}
+/*responsive text*/

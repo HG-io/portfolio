@@ -1,0 +1,253 @@
+<!doctype html>
+<html>
+
+<head>
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<script defer src="/ia/ia.js">
+	</script>
+	<title>Information Architecture for a Web App</title>
+
+	<link rel="stylesheet" href="/project/portfolio.css" />
+
+</head>
+
+<body>
+
+  <header>
+
+  </header>
+
+<!--hamburger nav-->
+<nav aria-labelledby="hamburger">
+  <button id="hamburger" class="hamburger" aria-label="Show Navigation Menu" aria-expanded="false" tabindex="0">☰</button>
+
+  <div id="navMenu" class="navMenu hidden vh">
+    <button id="closeNavMenu" class="closeBtn" aria-label="Hide Navigation Menu">×</button>
+    <ul>
+      <li><a href="/index.html">Portfolio</a></li>
+      <li><a href="/about/about.html">About</a></li>
+      <li><a href="/art/art.html">Art</a></li>
+    </ul>
+  </div>
+</nav>
+<!--hamburger nav ends-->
+
+
+<main>
+
+<br><br><br>
+
+<h3 class="special-fontv2-h3"> <strong>Information Architecture for a Website Featuring an Audio-Visual Production & Collaboration App</strong></h3>
+
+  <br>
+
+<h3 class="special-fontv3-h3">The Domain</h3>
+  
+<div class="centerthetext">
+<div class="flex-container1-text">
+ <div class="row">
+  <div class="column">
+<p class="blogtext">
+The project domain is “Audio-Visual Content”, focusing on digital audio and moving image.
+The website aims to bring together a community of Audio-Visual practitioners including artists, academic researchers, students and hobbyists, providing opportunities for learning, skill-sharing, creating, collaborating, showcasing and networking in an open-source environment.
+<br>
+<br>
+The website consists of an AV web application, which allows the user to create music and video, design sound, use the studio with 5 different set up options* (Audio Production single use, Video Production single use, Audio-Audio Collaboration, Audio-Video Collaboration, Video-Video Collaboration), as well as a Code section to create custom audio and/or video plugins, use them in the web app and share with the community.
+    </div>
+   </div>
+  </div>
+</div>
+
+
+<br>
+<h3 class="special-fontv3-h3">Domain Expert Interviews</h3>
+<br>
+
+<div class="centerthetext">
+<div class="flex-container1-text">
+ <div class="row">
+  <div class="column">
+<p class="blogtext">
+I conducted remote domain expert interviews with 4 participants.
+<br>
+<br>
+1-P1, 39: Self-Taught Visual Artist, Music Producer and AV Technician. They create visuals for DJs, clubs internationally, and also perform as a live music act in UK. They have been working as an AV technician at in London.
+<br>
+2-P2, 30: Developer, DJ, Music Producer. They work fulltime as a programmer, and freelance DJ and music producer.
+<br>
+3-P3, 28: Musician, Music Teacher, DJ. Classically trained musician and teacher, multi- instrumentalist and DJ.
+<br>
+4-P4, 30: Animator, DJ, Music Producer. They work fulltime as a senior animator, they produce music as a hobby and use hardware modular synthesizers.
+<br>
+<br>
+The interviews were followed by a comprehensive domain model which helped outline the components of the project.
+</p>
+    </div>
+   </div>
+  </div>
+</div>
+
+  
+<!--domain model-->
+<div style="align: left; text-align:center;">
+<img src="/project/img/domainmodel.png" alt="domain model" style="width:100%" class="center" onContextMenu="return false;" draggable="false">
+    <div class="caption">Domain Model</div>
+</div>
+<!--domain model ends-->
+
+<br>
+<h3 class="special-fontv3-h3">Creating the Site Map</h3>
+<br>
+  
+
+<div class="centerthetext">
+<div class="flex-container1-text">
+ <div class="row">
+  <div class="column">
+<p class="blogtext">
+The next step was to set the structure of the website by layering all the relevant content in the correct hierarchy. At this stage, I used <em>Optimal Sort</em> platform to conduct a remote Card Sorting exercise. I created 50 labels and asked a group of participants to complete the task. The results were varied to have a concrete idea of a detailed sitemap design, however, it clearly indicated that a separation of Audio and Visuals-related content was preferred by the majority. I created the website structure in line with the card sorting results.
+</p>
+    </div>
+   </div>
+  </div>
+</div>
+
+<!--similarity matrix-->
+<div style="align: left; text-align:center;">
+<img src="/project/img/similarity-matrix.png" alt="similarity matrix" style="width:100%" class="center" onContextMenu="return false;" draggable="false">
+    <div class="caption">Similarity Matrix</div>
+</div>
+
+<!--3d cluster view-->
+<div style="align: left; text-align:center;">
+<img src="/project/img/3d-ia.png" alt="3d cluster view" style="width:70%" class="center" onContextMenu="return false;" draggable="false">
+    <div class="caption">3D Cluster View</div>
+</div>
+
+<!--participant centric analysis-->
+<div style="align: left; text-align:center;">
+<img src="/project/img/participant-centric-analysis.png" alt="participant-centric analysis" style="width:70%" class="center" onContextMenu="return false;" draggable="false">
+    <div class="caption">Participant-Centric Analysis</div>
+</div>
+
+<!--sitemap-->
+<div style="align: left; text-align:center;">
+<img src="/project/img/sitemap.png" alt="site map" style="width:100%" class="center" onContextMenu="return false;" draggable="false">
+    <div class="caption">Site Map</div>
+</div>
+<!--sitemap ends-->
+  
+<br>
+<h3 class="special-fontv3-h3">User Flow</h3>
+<br>
+
+<div class="centerthetext">
+<div class="flex-container1-text">
+ <div class="row">
+  <div class="column">
+<p class="blogtext">
+To design the user flow, I aimed to create a user journey scenario which would cover at least the most important sections of the website. I decided to focus on a journey of a new user and the likely actions they would take to explore the website.
+<br>
+<br>
+<strong>The scenario:</strong> You have been exploring web-based audio-visual tools and your friend has just told you about this new website which has a web-based AV tool and a Code section to design custom plugins. You want to see how it works by registering, logging in, quickly looking at the available resources to understand how the app works, save a project, and try the collaboration option with your friend. 
+</p>
+    </div>
+   </div>
+  </div>
+</div>
+
+<!--user flow-->
+<div style="align: left; text-align:center;">
+<img src="/project/img/userflow.png" alt="user flow" style="width:100%" class="center" onContextMenu="return false;" draggable="false">
+    <div class="caption">User Flow</div>
+</div>
+<!--user flow ends-->
+
+<br>
+<h3 class="special-fontv3-h3">Wireframes</h3>
+<br>
+
+<div class="centerthetext">
+<div class="flex-container1-text">
+ <div class="row">
+  <div class="column">
+<p class="blogtext">
+I created the wireframes for 4 main pages of the website, which are the Home Page, MyStudio, The Library and Tutorials.
+<br>
+After the design of the sitemap and the user journey, which organised and helped visualise the content, there was a clearer idea of the wireframes’ structure. I aimed to maintain a consistent visual style in all the pages, except for the web app section, which naturally differed from the rest.
+    </div>
+   </div>
+  </div>
+</div>
+
+<center><p><small>Please scroll right to see all wireframes</small></p></center>
+  
+ <!-- WIREFRAMES Slideshow container -->
+<div class="slideshow-container fade">
+
+  <!-- Full images with numbers and message Info -->
+  <div class="Containers">
+    <div class="MessageInfo">1 / 4</div>
+    <img src="/project/img/wireframe1.png" style="width:100%">
+    <div class="Info">Wireframe - Home</div>
+  </div>
+
+  <div class="Containers">
+    <div class="MessageInfo">2 / 4</div>
+    <img src="/project/img/wireframe2.png" style="width:100%">
+    <div class="Info">Wireframe - My Studio</div>
+  </div>
+
+  <div class="Containers">
+    <div class="MessageInfo">3 / 4</div>
+    <img src="/project/img/wireframe3.png" style="width:100%">
+    <div class="Info">Wireframe - Research</div>
+  </div>
+
+    <div class="Containers">
+    <div class="MessageInfo">4 / 4</div>
+    <img src="/project/img/wireframe4.png" style="width:100%">
+    <div class="Info">Wireframe - Tutorials</div>
+  </div>
+
+  <!-- Back and forward buttons -->
+  <a class="Back" onclick="plusSlides(-1)">&#10094;</a>
+  <a class="forward" onclick="plusSlides(1)">&#10095;</a>
+</div>
+<br>
+
+<!-- The circles/dots -->
+<div style="text-align:center">
+  <span class="dots" onclick="currentSlide(1)"></span>
+  <span class="dots" onclick="currentSlide(2)"></span>
+  <span class="dots" onclick="currentSlide(3)"></span>
+  <span class="dots" onclick="currentSlide(4)"></span>
+</div> 
+
+<!-- carousel ends -->
+
+<br>
+<h3 class="special-fontv3-h3">Evaluation</h3>
+<br>
+
+<div class="centerthetext">
+<div class="flex-container1-text">
+ <div class="row">
+  <div class="column">
+<p class="blogtext">
+After I completed the wireframes, I was able to evaluate them using the wireframes with 2 participants who had been interviewed.
+<br><br>
+They were happy with the app section and the general layout, however found the The Library wireframe confusing and the content seemed “too crowded”, as they expressed, and not very friendly to search. This was an important issue since the search function is an important element of The Library, which should allow the user to access the documents. I had to redesign the Library and removed all the sections such as Titles, Categories, Authors, which I had previously included as well as the faceted search options. Instead, I only kept a short Overview and a few ‘featured essays’, and the search functionality. Following the changes on the wireframe, I needed to update the Sitemap as well by removing all the subpages that were previously linked to this page.
+<br>As a result, The Library became solely a database of documents which can be searched using the provided options and accessed via the search results.
+    </div>
+   </div>
+  </div>
+</div>
+
+  </main>
+  
+ </body>
+
+</html>

@@ -1,0 +1,271 @@
+/* nav styling*/
+:root {
+  --side-panel: 170px;
+  --side-color: black;
+}
+
+*, ::before, ::after {
+  box-sizing: border-box;
+}
+
+:focus {
+  outline: 2px solid #949494;
+}
+
+::-moz-focus-inner {
+  border: 0;
+}
+
+body {
+  position: relative;
+}
+
+
+.navMenu {
+  width: var(--side-panel);
+  color: var(--side-color);
+  background: #ffffff;
+  overflow: hidden;
+  position: fixed;
+  height: 100%;
+  transition: width .4s linear;
+  z-index: 10;
+}
+
+.closeBtn {
+  position: absolute;
+  top: 5px;
+  right: 10px;
+  color: inherit;
+  padding: 0 5px;
+  background: #d6d6d6;
+}
+
+.hamburger {
+  position: absolute;
+  top: 10px;
+  left: 12px;
+  padding: 0 5px 4px;
+  z-index: 12;
+  transition: margin .4s linear;
+}
+
+.hamburger-z {
+  z-index: 1;
+}
+
+.hidden {
+  width: 0;
+}
+
+.vh {
+  visibility: hidden;
+}
+
+button {
+  font-size: 3em;
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+ul {
+  font-family: 'Montserrat';
+  list-style: none;
+  padding: 1.4em;
+  line-height: 1.4;
+  background: #ffffff;
+}
+
+ul li {
+  padding: 5px 0;
+}
+
+.navMenu a {
+  text-decoration: none;
+  font-weight: bold;
+  color: inherit;
+  font-size: 1.2em;
+}
+
+.navMenu a:hover {
+  border-bottom: solid 1px;
+}
+
+main {
+  padding: 1.2em;
+  transition: margin-left .4s linear;
+  position: relative;
+  z-index: 1;
+}
+
+h1 {
+  margin: 0;  
+}
+
+.main-right {
+  padding-left: 4em;  
+}
+
+.menuOpen {
+  margin-left: var(--side-panel);
+}
+
+.overlay {
+  position: fixed;
+  z-index: 8;
+  top: 0;
+  right: 0;
+  left: var(--side-panel);
+  bottom: 0;
+  background: rgba(0,0,0,0);
+  height: 100%;
+}
+
+@media (max-width: 480px) {
+  .navMenu {
+    width: 100%;
+  }
+
+  .menuOpen {
+    margin-left: 0;
+  }
+
+}
+/* nav styling ends*/
+
+/*main*/
+h1 {
+  text-align: center;
+}
+body {
+  min-height: 100vh;
+  max-width: 1920px; 
+  margin: 0 auto;
+  padding: 5vw;
+  background color: #ffffff;
+  font-family: 'Montserrat';
+  font-size: 16px;
+  color: rgb(40,40,40);
+  line-height: 1.7;
+}
+
+/* h2 title */
+h2 {
+  font-size: 35px;
+}
+
+/* h3 title to centre */
+.titlecenter {
+  font-size: 25px;
+  text-align: center;
+}
+
+.center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 5vw;
+  width: 100%;
+  color: black;
+}
+/* h2 title ends */
+
+/*don't change link colours*/
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+/*don't change link colours ends*/
+
+/*remove outline on click*/
+a:active, a:focus {
+ box-shadow: none;
+ outline: none;
+}
+/*remove outline on click ends*/
+
+/* image captions general*/
+.caption {
+  font-family: 'Montserrat';
+  color: gray;
+  text-align: center;
+}
+/* image captions end*/
+
+
+
+/*text style of blogs*/
+.blogtext {
+  max-width: 800px;
+  text-align: left;
+  line-height: 1.7;
+}
+
+.centerthetext {
+display: flex;
+  flex-flow: column nowrap;
+  justify-content: center; /* aligns on vertical for column */
+  align-items: center; /* aligns on horizontal for column */
+}
+
+.flex-container1-text {
+  justify-content: center;
+}
+
+
+/* Caption Info */
+.Info {
+  color: #3d3d3d;
+  font-size: 16px;
+  padding: 10px 14px;
+  position: relative;
+  bottom: 10px;
+  width: 100%;
+  text-align: center;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .5}
+  to {opacity: 2}
+}
+
+@keyframes fade {
+  from {opacity: .5}
+  to {opacity: 2}
+}
+
+/*IA image carousel ends*/
+
+/*IA Styles ends*/
+
+/*Contact Page mail icon*/
+.material-symbols-outlined {
+  font-variation-settings:
+  'FILL' 0,
+  'wght' 400,
+  'GRAD' 0,
+  'opsz' 48
+}
+/*Contact Page mail icon ends*/
+
+/*footnote*/
+.footnote {
+  font-size: 16px;
+}
+/*footnote ends*/
+
+/*responsive text all*/
+@media (min-width: 0px) {
+  p { font-size: 1rem; }
+}
+
+@media (min-width: 400px) {
+  p { font-size: calc(1rem + 1vw); }
+}
+
+@media (min-width: 1001px){
+  p { font-size: 1rem; }
+}
+/*responsive text*/

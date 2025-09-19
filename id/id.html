@@ -1,0 +1,491 @@
+<!doctype html>
+<html>
+
+<head>
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<script defer src="/project/portfolio.js">
+	</script>
+	<title>Accessibility Evaluation for Library of Things</title>
+
+	<link rel="stylesheet" href="/project/portfolio.css" />
+
+</head>
+
+<body>
+
+ <!--hamburger nav-->
+<nav aria-labelledby="hamburger">
+  <button id="hamburger" class="hamburger" aria-label="Show Navigation Menu" aria-expanded="false" tabindex="0">☰</button>
+
+  <div id="navMenu" class="navMenu hidden vh">
+    <button id="closeNavMenu" class="closeBtn" aria-label="Hide Navigation Menu">×</button>
+    <ul>
+      <li><a href="/index.html">Portfolio</a></li>
+      <li><a href="/about/about.html">About</a></li>
+      <li><a href="/art/art.html">Art</a></li>
+    </ul>
+  </div>
+</nav>
+<!--hamburger nav ends-->
+
+  <main>
+
+<div class="centerthetext">
+<h2>Accessibility Evaluation for Library of Things
+ </h2>
+</div>
+
+<div style="align: left; text-align:center;">
+<img src="/project/img/wcag.png" alt="evaluation process" style="width:80%" class="center" onContextMenu="return false;" draggable="false">
+</div>
+
+    
+<div class="centerthetext">
+<div class="flex-container1-text">
+ <div class="row">
+  <div class="column">
+<p class="blogtext">
+<strong>Library of Things</strong> is a London-based social enterprise that allows people to borrow products and tools such as for the house and garden, as well as musical instruments and various electronics with a growing range of selection via multiple branches. They value accessibility and inclusivity, therefore they wanted to have their website evaluated according to the industry standards based on WCAG 2.1 AA, the most current guidelines at the time of the evaluation; currently WCAG 3.0, which aims to add on WCAG 2.1 is under development.
+</p>
+  </div>
+ </div>
+</div>
+</div>
+    
+<div class="centerthetext">
+<div class="flex-container1-text">
+ <div class="row">
+  <div class="column">
+<p class="blogtext">
+After the <strong>preliminary review</strong>, 4 pages, as detailed below, were analysed initially with the automated tool <em>WAVE plugin</em> on Chrome simultaneously with the <em>Inspect</em> function. <strong>Automated testing</strong> was followed by <strong>manual testing</strong>, which involved the use of <em>VoiceOver</em> on MAC OSX 10.14 and Safari browser, as well as testing the quality of the navigation with the keyboard.
+<br>
+<br>
+With the VoiceOver, the tests were as follows:
+<br>
+<br>
+- Test the feature by reading every element.
+<br>
+- Test the feature by reading headers.
+<br>
+- Test the feature by tabbing through links.
+<br>
+- Test the feature by reading landmarks.
+<br>
+- Test the feature for use of ARIA.
+<br>
+<br>
+<br>
+The details of the accessibility barriers and errors based on WCAG 2.1 AA guidelines were documented in the main report.
+<br>
+<br>
+<em>* Due to confidentiality requirements, the main report is not to be published online. This page includes only selected examples of findings presented in the Appendices accompanying the main report, following a comprehensive accessibility evaluation carried out based on WCAG 2.1 AA.</em>
+</p>
+  </div>
+ </div>
+</div>
+</div>
+
+    
+<div class="centerthetext">
+<div class="flex-container1-text">
+ <div class="row">
+  <div class="column">
+<p class="blogtext">
+<strong>1. Executive Summary</strong>
+<br>
+<br>
+This report describes the conformance of the website of Library of Things with W3C’s Web Content Accessibility Guidelines 2.1 (WCAG 2.1). The review process is described in Section 5 below and is based on evaluation described in Accessibility Evaluation Resources.
+<br>
+Based on this evaluation, the Library of Things website does not meet the WCAG 2.1, Conformance Level AA due to various critical functional problems outlines in the report.
+<br>
+<br>
+<strong>2. Background About Evaluation</strong>
+<br>
+<br>
+Conformance evaluation of web accessibility requires a combination of semi-automated evaluation tools and manual evaluation by an experienced reviewer. The evaluation results in this report are based on evaluation conducted on the following date(s): 7 and 8th December, 2020. The website may have changed since that time.
+<br>
+I aimed to prioritise the most obvious accessibility barriers so that those which are likely to have the greatest impact in terms of functionality can be identified and addressed first.
+<br>
+<br>
+<strong>3. Scope of Review</strong>
+<br>
+<br>
+Name of website: Library of Things
+<br>
+Base URL of site: https://www.libraryofthings.co.uk/
+<br>
+[URLs included in review]:
+<br>
+https://www.libraryofthings.co.uk/
+<br>
+https://www.libraryofthings.co.uk/catalogue/browse
+<br>
+https://www.libraryofthings.co.uk/catalogue/borrow-jigsaw-cordless
+<br>
+https://www.libraryofthings.co.uk/cart
+<br>
+Review date(s): 7-8 December 2020
+<br>
+Natural language of website: English
+<br>
+<br>
+
+<strong>4. Reviewer</strong>
+<br>
+<br>
+Name of reviewer: Hande Güngör
+<br>
+Natural language(s) with which reviewer(s) is/are fluent, or familiar: English and Turkish
+<br>
+<br>
+<strong>5. Review Process / Method</strong>
+<br>
+<br>
+Determine the principles, determine the scope, create an evaluation plan.
+<br>
+Identify WCAG 2.1 Level A and AA guidelines to focus on.
+<br>
+Identify the automated tools: WAVE on Chrome, Chrome Dev Tools, Web Developer on Chrome 86.0.4240.198 (Official Build) (x86_64).
+<br>
+Identify the manual evaluation tools: VoiceOver screen reader to test navigation on Mac OSX 10.14 with Safari 14.0.1, and the keyboard for reviewing the quality of navigation by tabbing.
+</p>
+  </div>
+ </div>
+</div>
+</div>
+
+    
+
+<div class="centerthetext">
+<div class="flex-container1-text">
+ <div class="row">
+  <div class="column">
+<p class="blogtext">
+<strong>Examples of Findings:</strong>
+<br>
+<br>
+<strong>PAGE TITLE</strong>
+<br>
+<br>
+The best practice is to have a short, clear and descriptive title so that the user can quickly understand the page content and decide whether it is the relevant page for them. For a visually impaired user, the above title may not indicate which page of the website they are on, unlike a user without a visual impairment, who may not need to check the title to know which page they are viewing.
+<br>
+<br>
+<strong>Title:</strong> Library of Things | Borrow useful Things for your home, projects and adventures
+The page title is too long. The title is read by the screen reader and is very important for the visually impaired user as the first line of information.
+</p>
+  </div>
+ </div>
+</div>
+</div>
+
+<div style="align: left; text-align:center;">
+<img src="/project/img/wcag1.png" alt="wcag 1" style="width:80%" class="center" onContextMenu="return false;" draggable="false">
+</div>
+
+<div class="centerthetext">
+<div class="flex-container1-text">
+ <div class="row">
+  <div class="column">
+<p class="blogtext">
+The slogan <strong>“Borrow useful things for your home, projects and adventures”</strong> can be removed and the page title can be changed to <strong>“Home – Library of Things”</strong
+<br>
+<br>
+<strong>“Home – Library of Things”</strong --> Lists the most specific information first + Identifies the site + Concise + Descriptive
+<br>
+<br>
+<strong>Image text alternatives ("alt text") (pictures, illustrations, charts, etc.)</strong>
+<br>
+The aim of text alternatives is to provide information about an image to a user who is not able to see it due to a visual impairment. If they need to have alt text, meaningful and clear descriptions should be used. Otherwise, they should have null alt (alt="") to indicate that they are decorative.
+<br>
+The images do not contain “alt text” and are ignored by the screen reader. They have null alt (alt="") indicating that they are decorative images without any function and can safely be ignored.
+</p>
+  </div>
+ </div>
+</div>
+</div>
+
+<div style="align: left; text-align:center;">
+<img src="/project/img/wcag2.png" alt="wcag 2" style="width:80%" class="center" onContextMenu="return false;" draggable="false">
+</div>
+
+
+<div class="centerthetext">
+<div class="flex-container1-text">
+ <div class="row">
+  <div class="column">
+<p class="blogtext">
+<strong>TEXT</strong>
+<br>
+<br>
+<strong>Headings</strong>
+<br>
+<br>
+Headings need to be marked up to indicate the page’s content structure to the user so that the assistive technologies can identify them and navigate the page effectively.
+<br>
+<br>
+<strong>Findings:</strong>
+<br>
+a-The page is missing the first level heading. ‘Why buy when you can borrow?’, which is currently within a paragraph, is logically the most important title since it introduces the website.
+<br>
+<br>
+<strong>Recommendation:</strong> Use < h1 > element for the most important title ‘Why buy when you can borrow?’
+</p>
+  </div>
+ </div>
+</div>
+</div>
+
+<div style="align: left; text-align:center;">
+<img src="/project/img/wcag3.png" alt="wcag 3" style="width:75%" class="center" onContextMenu="return false;" draggable="false">
+</div>
+
+<div class="centerthetext">
+<div class="flex-container1-text">
+ <div class="row">
+  <div class="column">
+<p class="blogtext">
+b-A logical hierarchy would suggest that the title ‘Our most popular things’ should have a h2 element, which is currently using a h3 (< h3 >) element 
+</p>
+  </div>
+ </div>
+</div>
+</div>
+
+<div style="align: left; text-align:center;">
+<img src="/project/img/wcag4.png" alt="wcag 4" style="width:80%" class="center" onContextMenu="return false;" draggable="false">
+</div>
+
+<div class="centerthetext">
+<div class="flex-container1-text">
+ <div class="row">
+  <div class="column">
+<p class="blogtext">
+Similarly, “We are delivering to Brixton too” and “News Flash we are coming to Morden”, are using h3 elements (< h3 >), which should be moved up to the h2 level.
+</p>
+  </div>
+ </div>
+</div>
+</div>
+
+<div style="align: left; text-align:center;">
+<img src="/project/img/wcag5.png" alt="wcag 5" style="width:80%" class="center" onContextMenu="return false;" draggable="false">
+</div>
+
+<div class="centerthetext">
+<div class="flex-container1-text">
+ <div class="row">
+  <div class="column">
+<p class="blogtext">
+<strong>Recommendation:</strong> Use < h2 > element for the titles <strong>‘Our most popular things’</strong>, <strong>“We are delivering to Brixton too”</strong> and <strong>“News Flash we are coming to Morden”</strong>, to follow a logical hierarchy.
+<br>
+<br>
+<br>
+<strong>Contrast Ratio (colour contrast)</strong>
+<br>
+<br>
+<strong>Guidance</strong>
+<br>
+The visual presentation of text and images of text should have a contrast ratio of at least 4.5:1.
+<br>
+<br>
+<strong>Large Text:</strong> Large-scale text and images of large-scale text have a contrast ratio of at least 3:1.
+<br>
+<strong>Incidental:</strong> Text or images of text that are part of an inactive user interface component, that are pure decoration, that are not visible to anyone, or that are part of a picture that contains significant other visual content, have no contrast requirement.
+<br>
+<strong>Logotypes:</strong> Text that is part of a logo or brand name has no contrast requirement.
+<br>
+<br>
+<strong>For:</strong> People who cannot use a mouse and use only the keyboard, and people who use a screen reader.
+<br>
+<br>
+<strong>Findings:</strong> 8 contrast errors, all in the same section “Our most popular things”.
+</p>
+  </div>
+ </div>
+</div>
+</div>
+
+<div style="align: left; text-align:center;">
+<img src="/project/img/wcag6.png" alt="wcag 6" style="width:80%" class="center" onContextMenu="return false;" draggable="false">
+</div>
+
+<div class="centerthetext">
+<div class="flex-container1-text">
+ <div class="row">
+  <div class="column">
+<p class="blogtext">
+The pricing information for all the products against the white background lacks contrast. The lack of contrast is noticeable even for a user with no visual impairment. When the contrast is checked in more detail with the Colour Contrast Analyser, three tones of grey colour of the foreground texts are revealed; two of which meet the contrast requirements of WCAG 2.1 AA, however as a whole, the contrast fails.
+<br>
+It is possible to see the colour in great detail with the Colour Contrast Analyser’s advanced zoom function.
+</p>
+  </div>
+ </div>
+</div>
+</div>
+
+<div style="align: left; text-align:center;">
+<img src="/project/img/wcag7.png" alt="wcag 7" style="width:60%" class="center" onContextMenu="return false;" draggable="false">
+</div>
+
+<div class="centerthetext">
+<div class="flex-container1-text">
+ <div class="row">
+  <div class="column">
+<p class="blogtext">
+It also allows us to assess whether the colour will be suitable for users with different types of colour blindness condition.
+<br>
+As it is seen in the first image below on the left, the light grey will be problematic not only because of lack of contrast, but also for the colour blind to accurately see the colour of the content.
+<br>
+<br>
+<strong>#D4D2D1</strong>(foreground) on <strong>#FEFFFE</strong> (background) fails all of the contrast requirements of WCAG 2.1AA
+<br>
+<br>
+<strong>#7A7473</strong> (foreground) on <strong>#FEFFFE</strong> (background) fails the contrast requirements of WCAG 2.1AAA, however, satisfies AA the with a contrast ratio of 4.6:1 
+</p>
+  </div>
+ </div>
+</div>
+</div>
+
+<div style="align: left; text-align:center;">
+<img src="/project/img/wcag8.png" alt="wcag 8" style="width:100%" class="center" onContextMenu="return false;" draggable="false">
+</div>
+
+<div class="centerthetext">
+<div class="flex-container1-text">
+ <div class="row">
+  <div class="column">
+<p class="blogtext">
+<strong>Recommendation:</strong>
+<br>
+<br>
+The contrast between the (foreground) text colour and the background colour should be increased. By taking the above finding as reference, <strong>#7A7473</strong> (AA) or <strong>#544C4B</strong> (AAA) could be used against the current background colour.
+<br>
+<br>
+<br>
+<strong>Resize Text (Level AA)</strong>
+<br>
+<br>
+<strong>Requirement:</strong> Except for captions and images of text, text can be resized without assistive technology up to 200 percent without loss of content or functionality. (WCAG 1.4.4)
+<br>
+<br>
+<strong>For:</strong> People with low vision, low-contrast vision, or other imperfect vision problems
+<br>
+<br>
+<strong>Findings: </strong> No problems found with resizing. It was checked by zooming in 200% from Chrome settings. Images and the text appeared clear. People with low vision, low-contrast vision, or otherwise less-than-perfect vision may wish to magnify web content in order to make it legible or less-strenuous to read.
+<br>
+<br>
+<br>
+<strong>Interaction</strong>
+<br>
+<br>
+<strong>Keyboard access and visual focus</strong>
+<br>
+<br>
+<strong>Findings:</strong>
+<br>
+<br>
+Tab skips drop-down menus “About” and “Locations” in the global navigation. Recommendation: Make the drop-down menu items selectable so that it is not missed and the main menu item, as well as the dropdown menu items are reachable; otherwise, the user won’t be able to access these sections.
+</p>
+  </div>
+ </div>
+</div>
+</div>
+
+<div style="align: left; text-align:center;">
+<img src="/project/img/wcag9.png" alt="wcag 9" style="width:50%" class="center" onContextMenu="return false;" draggable="false">
+</div>
+
+<div class="centerthetext">
+<div class="flex-container1-text">
+ <div class="row">
+  <div class="column">
+<p class="blogtext">
+During tabbing, <strong>“Start Borrowing”</strong> button misses a visual indicator to inform the user that it is selected.
+<br>
+<br>
+<strong>Recommendation:</strong>
+<br>
+<br>
+This may not cause a problem for a screen reader user, however, someone with low-vision or even no vision problems, would not be able to see that the button is in focus.
+</p>
+  </div>
+ </div>
+</div>
+</div>
+
+<div style="align: left; text-align:center;">
+<img src="/project/img/wcag10.png" alt="wcag 10" style="width:45%" class="center" onContextMenu="return false;" draggable="false">
+</div>
+
+<div class="centerthetext">
+<div class="flex-container1-text">
+ <div class="row">
+  <div class="column">
+<p class="blogtext">
+The heading structure is not logical and is preventing the user from efficient navigation.
+<br>
+<br>
+<strong>Recommendation:</strong>
+<br>The heading structure recommendations above, starting from the use of h1 element and adding the relevant elements to the other headings would solve the issue.
+<br>
+<br>
+The images except for the product images can not be tabbed due to not being linked to any section.
+<br>
+<br>
+<strong>Recommendation:</strong>
+<br>
+<br>
+Link all the images to relevant sections/content for logical navigation.
+<br>
+<br>
+<strong>Other:</strong>
+Moving, Flashing, or Blinking Content: N/A
+Multimedia (video, audio) alternatives: N/A
+<br>
+<br>
+<br>
+<strong>Basic Structure Check</strong>
+<br>
+<br>
+Performed with Web Dev tool by disabling all images, disabling all styles (CSS) and linearising the page.
+<br>
+<br>
+<strong>Findings:</strong>
+<br>
+<br>
+Navigation problems due to the previously mentioned problems with the 2 global navigation drop down menu items and the lack of logical heading structure. A new finding with the Web Dev tool is that the global navigation menu appears to have a duplicate. The first uses links for Sign In/Sign Up (< a href >), and the second has a <em>button</em> element for the same items.
+</p>
+  </div>
+ </div>
+</div>
+</div>
+  
+<div style="align: left; text-align:center;">
+<img src="/project/img/wcag11.png" alt="wcag 11" style="width:90%" class="center" onContextMenu="return false;" draggable="false">
+</div>
+
+<div class="centerthetext">
+<div class="flex-container1-text">
+ <div class="row">
+  <div class="column">
+<p class="blogtext">
+Although it is not a WCAG requirement, it is stated that it is important to use <em>target=”_blank”</em> carefully. Links opening in new windows may be disorientating for people, especially if they have visual impairments and are using screen readers. It is better practice to let them know that the link opens in a new tab. A simple code would be:
+</p>
+  </div>
+ </div>
+</div>
+</div>
+
+<div style="align: left; text-align:center;">
+<img src="/project/img/wcag12.png" alt="wcag 12" style="width:90%" class="center" onContextMenu="return false;" draggable="false">
+</div>
+    
+  </main>
+
+
+</body>
+
+</html>
+
